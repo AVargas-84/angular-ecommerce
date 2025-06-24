@@ -1,0 +1,25 @@
+<!-- <p>
+<input type="number" [value]="duration()" (change)="changeDuration($event)">
+</p>
+<p>
+  <input type="text" [value]="message()" (change)="changeMessage($event)">
+</p> -->
+<div>
+  <h1 class="text-lg font-bold">About Us</h1>
+  <p class="text-sm">Lorem ipsum <span highlight>dolor sit amet consectetur</span>, adipisicing elit. Inventore, iure nostrum ut pariatur nesciunt dolorem vitae sapiente. Quasi eveniet sunt similique, at dolorem, animi maxime, nobis blanditiis odio corporis repellendus.</p>
+  <p class="text-sm">
+    Clients: @if (duration() > 0) {
+    <app-counter [duration]="duration()" [message]="message()"/>
+  }
+</p>
+<div>
+  <app-wave-audio audioUrl="audio.mp3"/>
+</div>
+<div>
+  <a routerLink="/"
+    class="inline-flex bg-blue-600 text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blues-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center my-4">
+    Back to Homepage
+  </a>
+</div>
+</div>
+
